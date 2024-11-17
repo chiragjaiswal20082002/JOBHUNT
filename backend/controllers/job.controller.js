@@ -66,7 +66,7 @@ export const getJobById = async (req, res) => {
         
         const jobId = req.params.id;
 
-        console.log(req.params.id);
+        // console.log(req.params.id);
 
         console.log("Request ID:",jobId);
         const job = await Job.findById(jobId).populate({

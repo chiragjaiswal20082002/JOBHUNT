@@ -45,7 +45,7 @@ const CompanySetup = () => {
             formData.append("file", input.file);
         }
 
-        console.log(formData);
+        // console.log(formData);
         try {
             setLoading(true);
             const res = await axios.put(`${COMPANY_API_END_POINT}/update/${params.id}`, formData, {
