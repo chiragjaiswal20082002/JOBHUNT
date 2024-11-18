@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // Import Vite's defineConfig function to define the config
 import { defineConfig } from 'vite';
 import path from 'path';
