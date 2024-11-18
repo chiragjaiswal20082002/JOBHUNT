@@ -1,8 +1,3 @@
-import { defineConfig } from 'vite'
-import path from "path"
-import react from '@vitejs/plugin-react'
-
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -11,6 +6,13 @@ export default defineConfig({
     },
   },
   build: {
-    chunkSizeWarningLimit: 1000 // Increase to 1000 KB (1 MB)
-  }
-})
+    chunkSizeWarningLimit: 1000, // 1000 KB (1 MB)
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'redux', 'axios'] // Example, include large libraries in separate chunk
+        },
+      },
+    },
+  },
+});
