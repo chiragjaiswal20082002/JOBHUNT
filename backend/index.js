@@ -14,11 +14,9 @@ import path from "path";
 
 
 dotenv.config({});
-<<<<<<< HEAD
+
 connectDB();
-=======
- connectDB();
->>>>>>> 32e4e017c744d0afaeafd5352b2b822cce4cd4d6
+
 
 
 
