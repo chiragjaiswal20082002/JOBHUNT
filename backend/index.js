@@ -58,5 +58,5 @@ app.get('*',(_,res)=>{
 app.listen(port ,()=>
 {
     connectDB();
-    console.log(`server running on the port ${port}`);
+    // console.log(`server running on the port ${port}`);
 })
