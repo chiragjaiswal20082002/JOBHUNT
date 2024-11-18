@@ -10,7 +10,7 @@ import applicationRoute from "./routes/application.route.js"
 import path from "path";
 
 
-// Use CORS to allow requests from your frontend
+// Use CORS to allow s from your frontend
 
 
 dotenv.config({});
