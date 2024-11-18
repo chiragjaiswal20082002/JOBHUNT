@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions={
-    origin:'http://localhost:5173',
+    origin:"https://jobhunt-4.onrender.com",
     credentials:true
 }
 app.use(cors(corsOptions));
@@ -62,10 +62,6 @@ app.get('*',(_,res)=>{
 })
 app.listen(port ,()=>
 {
-<<<<<<< HEAD
-    
-=======
-   
->>>>>>> 32e4e017c744d0afaeafd5352b2b822cce4cd4d6
+
     // console.log(`server running on the port ${port}`);
 })
