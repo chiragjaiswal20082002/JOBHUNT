@@ -1,7 +1,7 @@
 // import React from 'react'
 import CategoryCarousel from './CategoryCarousel'
 import Footer from './Footer'
-import HeroSection from './HeroSection'
+import Herosection from './Herosection'
 import LatestJobs from './LatestJobs'
 import Navbar from './shared/Navbar'
 import useGetAllJobs from "../hooks/useGetAllJobs"
