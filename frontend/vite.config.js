@@ -15,20 +15,14 @@ export default defineConfig({
   },
   build: {
 
-    chunkSizeWarningLimit: 1000, // Increase chunk size warning limit
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'redux', 'axios'],
-
     chunkSizeWarningLimit: 1000, // 1000 KB (1 MB)
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'redux', 'axios'] // Example, include large libraries in separate chunk
-
+        },
         },
       },
     },
-  },
+
 });
